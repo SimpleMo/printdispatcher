@@ -1,6 +1,7 @@
 package ru.sample.printdispatcher.documents;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 public enum DocumentType {
     TEXT("Текстовый документ"),
@@ -14,7 +15,7 @@ public enum DocumentType {
         this.name = name;
     }
 
-    @Nonnull
+    @Nullable
     public static DocumentType getByName(@Nonnull String name){
         for (DocumentType value : values()){
             if(value.name.equals(name)){

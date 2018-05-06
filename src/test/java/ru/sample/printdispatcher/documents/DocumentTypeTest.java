@@ -17,7 +17,7 @@ public class DocumentTypeTest {
     public void constantNotFound(){
         DocumentType documentType = DocumentType.getByName("Левый тип документа");
 
-        assertEquals(DocumentType.TEXT, documentType);
+        assertNull(documentType);
     }
 
 }
