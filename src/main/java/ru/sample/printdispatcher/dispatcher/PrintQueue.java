@@ -28,7 +28,7 @@ public class PrintQueue {
         return wrapped.size() > 0 ? wrapped.element() : null;
     }
 
-    void putDocumentToQueue(Document document){
+    synchronized void putDocumentToQueue(Document document){
         wrapped.add(document);
     }
 
